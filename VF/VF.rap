@@ -1,0 +1,107 @@
+[Project]
+Assembler=masm
+Type=Dos App
+Description=VF
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+[Files]
+1=VF.Asm
+[MakeFiles]
+0=VF.rap
+1=VF.rc
+2=VF.asm
+3=VF.obj
+4=VF.res
+5=VF.exe
+6=VF.def
+7=VF.dll
+8=VF.txt
+9=VF.lib
+10=VF.mak
+11=VF.hla
+12=VF.com
+13=VF.ocx
+14=VF.idl
+15=VF.tlb
+16=VF.sys
+[MakeDef]
+Menu=0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+1=
+2=3,O,$B\ML.EXE /Zm /AT /DMASM /DDOS /c /nologo /I"$I",2
+3=0,O,$B\doslnk.exe /NOLOGO /TINY,3,"|||||"
+4=0,0,"C:\Program Files (x86)\DOSBox-0.74\dosbox.exe",12
+5=
+6=*.obj,O,$B\ML.EXE /Zm /AT /c /DMASM /DDOS /nologo /I"$I",*.asm
+7=0,0,"C:\Program Files (x86)\DOSBox-0.74\dosbox_debug.bat",12
+11=
+12=3,O,$B\ML.EXE /Zi /Zd /Zm /AT /DMASM /DDOS /DDEBUG /c /nologo /I"$I",2
+13=0,O,$B\doslnk.exe /NOLOGO /CODEVIEW /DEBUG /TINY,3,"|||||"
+14=0,0,"C:\Program Files (x86)\DOSBox-0.74\dosbox.exe",12
+15=
+16=*.obj,O,$B\ML.EXE /Zi /Zd /Zm /AT /c /DMASM /DDOS /DDEBUG /nologo /I"$I",*.asm
+17=0,0,"C:\Program Files (x86)\DOSBox-0.74\dosbox_debug.bat",12
+[AutoLoad]
+1=1
+[Group]
+Group=Assembly,Resources,Misc
+1=2
+[VersionControl]
+Settings=1246
+Milestones=129
+MilestoneEvery=10
+MilestoneEveryCurrent=0
+MilestoneOnBuild=0.0.0.0
+MilestoneOnTime=2
+MilestoneOnDate=0
+MilestoneOnDateWhen=1
+MilestoneOnDateStatus=0
+MilestoneOnDateDate=5
+MilestoneOnDateTimeYear=2017
+MilestoneOnDateTimeMonth=4
+MilestoneOnDateTimeDate=6
+MilestoneOnDateTimeHour=18
+MilestoneOnDateTimeMin=57
+MilestoneOnDateTimeSec=40
+MilestoneOnDateTimeStatus=0
+BackupLocation=C:\Users\anton\Desktop\IntallerASM\RadASM\Masm\Projects\VCBackups\
+CompressionLevel=0
+DefaultComment=Project $N, $Z, Backup Created On $D At $T.
+ExcludeExt1=\
+ExcludeExt2=\
+ExcludeExt3=\
+ExcludeExt4=\
+FileVerLength=4
+FileVer2Range=0
+FileVer3Range=0
+FileVer4Range=0
+ProductVerLength=4
+ProductVer2Range=0
+ProductVer3Range=0
+ProductVer4Range=0
+[Colref]
+0=00FFFFFF
+1=00FFFFFF
+2=00FFFFFF
+3=00FFFFFF
+4=00FFFFFF
+5=00FFFFFF
+6=00FFFFFF
+7=00FFFFFF
+[Collapse]
+1=
+[Size]
+1=0,0,0,0,16222
+[BookMark]
+0=
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+[BreakPoint]
+0=
